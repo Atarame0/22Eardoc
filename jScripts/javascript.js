@@ -35,7 +35,7 @@ function toggleNavBar() {
 
   
 function navigateToDoctorPage() {
-    window.location.href = "http://127.0.0.1:5500/doctorPage.html";
+    window.location.href = "doctorPage.html";
     console.log("doc");
  }
 
