@@ -1,0 +1,190 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>EardocLearnHomepage</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/javascript.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimeo Video Embed</title>
+    
+</head>
+
+<body>
+    <!-- <nav>
+    
+
+        <button id="nav-button" class="btn-mobile hide" onclick="toggleNav()"><img src="images/nav-icon.svg"
+            alt="ניווט"></button>
+ 
+        <ul id="main-nav" class="flex-container-nav hide-mobile">
+            <a href="#"> <img src="images/Eardoclogo.png" alt="EardocLogo" style="width: 110%;"></a>
+            <li><a href="#">שחיינים </a></li>
+            <li><a href="#">מבוגרים</a></li>
+            <li><a href="http://127.0.0.1:5500/doctorPage.html">רופאים</a></li>
+            <li><a href="#"> טסים</a></li>
+            <li><a href="#"> ילדים</a></li>
+        </ul>
+
+    
+    </nav>
+
+    <nav>
+        <button id="nav-button" class="btn-mobile" onclick="toggleNavBar()" >&#9776
+        </button>
+        <div id="mobile-nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNavBar()">&times;</a>
+            <a href="#">שחיינים </a>
+            <a href="#">מבוגרים</a>
+            <a href="http://127.0.0.1:5500/doctorPage.html">רופאים</a>
+            <a href="#"> טסים</a>
+            <a href="#"> ילדים</a>
+        </div>
+    </nav> -->
+
+    
+    <nav>
+        <button id="nav-button" class="btn-mobile hide" onclick="toggleNavBar()">&#9776;</button>
+        <div id="mobile-nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNavBar()">&times;</a>
+            <a href="#">שחיינים</a>
+            <a href="#">מבוגרים</a>
+            <a href="http://127.0.0.1:5500/doctorPage.html">רופאים</a>
+            <a href="#">טסים</a>
+            <a href="#">ילדים</a>
+        </div>
+    
+        <ul id="main-nav" class="flex-container-nav hide-mobile">
+            <li><a href="#"><img src="images/Eardoclogo.png" alt="EardocLogo" style="width: 110%;"></a></li>
+            <li><a href="#">שחיינים</a></li>
+            <li><a href="#">מבוגרים</a></li>
+            <li><a href="http://127.0.0.1:5500/doctorPage.html">רופאים</a></li>
+            <li><a href="#">טסים</a></li>
+            <li><a href="#">ילדים</a></li>
+        </ul>
+    </nav>
+    
+      
+   
+<main>
+
+    <ul class="flex-container-opening">
+<li>
+
+    <h1>
+    אתר הדרכה אירדוק
+    </h1>
+            
+
+   <p>זהו אתר הלמידה של המכשיר אירדוק- כאן תוכלו ללמוד
+     מהו האירדוק, איך הוא עובד ולאחר שתבחרו מי אתם.ן,
+    
+      נתאים את המידע על הוראות השימוש במיוחד בשבילכם.ן
+    </p> 
+
+           
+</li>
+
+<li >
+    <div class="responsive-iframe-container">
+        <iframe src="https://player.vimeo.com/video/946667805?h=26c040905b" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+</li>
+
+
+            
+</ul>     
+
+
+
+<br>
+<br>
+<br>
+
+
+
+            <div class="list-wrapper" >
+                <p>בשביל שנוכל להתאים לך את ההדרכה באופן אישי, בחר/י את האפשרות המתאימה לך</p>
+                <ul class="list">
+    
+                    <li class="item">
+                        <div class="content">
+                            <p class="IconTextDoc" onclick="navigateToDoctorPage() ">אני רופא.ה</p>
+                            <img src="images/doctorIcon.png" alt="רופא.ה" class="Icon-image-Doc">
+                        </div>
+                    </li>
+
+                    <li class="item">
+                        <div class="content">
+                            <p class="IconTextKid"> אני ילד.ה</p>
+                            <img src="images/childrenIcon.png" alt="ילד.ה" class="Icon-image-Kid">
+                        </div>
+                    </li>
+                  
+
+                    <li class="item">
+                        <div class="content">
+                            <p class="IconTextFly"> אני טס.ה</p>
+                            <img src="images/travlerIcon.png" alt="ילד.ה" class="Icon-image-Fly">
+                        </div>
+                    </li>
+
+                    <li class="item">
+                        <div class="content">
+                            <p class="IconTextSw"> אני שוחה</p>
+                            <img src="images/swimmericon.png" alt="שוחה" class="Icon-image-Sw">
+                        </div>
+                    </li>
+                  
+                    <li class="item">
+                        <div class="content">
+                            <p class="IconTextAd"> אני מבוגר.ת</p>
+                            <img src="images/Adulticon.png" alt="מבוגר.ת" class="Icon-image-Ad">
+                        </div>
+                    </li>
+                  
+
+            
+                </ul>
+                 <button onclick="handleClick('previous')" class="button button--previous" type="button"> &#8250;</button> 
+                <button onclick="handleClick('next')" class="button button--next" type="button"> &#8249;</button>
+            </div>
+
+
+
+     
+
+
+
+
+
+
+     
+
+
+
+</main>
+
+
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024. קרדיטים וכאלה.</p>
+    </footer>
+
+
+</body>
+
+</html>

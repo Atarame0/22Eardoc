@@ -1,0 +1,751 @@
+﻿:root{
+    font-size: 16px;
+}
+
+
+@font-face {
+    font-family: 'Varela Round';
+    src: url('VarelaRound-Regular.ttf') format('truetype');
+}
+
+
+
+/* עיצוב של דף הבית */
+
+body{
+
+font-family: 'Varela Round';
+}
+
+
+
+
+/* תפריט ניווט עליון*/
+
+.sidenav {
+    text-align: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+ /* Ensure the sidenav slides in from the left */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 17px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: rgb(55, 199, 233);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.btn-mobile {
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#nav-button {
+    display: none; /* Hide the nav button by default */
+}
+
+nav {
+   
+    box-shadow: 0 1px 32px rgba(163, 224, 255, 0.5); /* Change this to your desired color */
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #nav-button {
+        display: block; /* Show the nav button on small screens */
+    }
+
+    .sidenav {
+        display: block; /* Ensure sidenav can be displayed */
+    }
+
+    .flex-container-nav.hide-mobile{
+display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .sidenav {
+        display: none; /* Hide sidenav on larger screens */
+    }
+
+    .flex-container-nav {
+   
+        display: flex;
+        flex-direction: column; /* Display items in a column */
+        align-items: center; /* Center items horizontally */
+        gap: 11%;
+        padding: 2%;
+        justify-content: center;
+    }
+
+    .chosen-cat-nav a {
+        display: block;
+        text-decoration: none;
+        border-bottom: 2px solid rgb(55, 199, 233);
+    }
+
+    .flex-container-nav a {
+        color: black;
+        text-align: center;
+    }
+
+    .flex-container-nav.hide-mobile {
+        display: none;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    #logo-button img {
+        height: 40px;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.flex-container-nav{
+
+    display: flex;
+    gap: 11%;
+    padding: 2%;
+}
+
+.chosen-cat-nav a {
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(55, 199, 233);
+}
+
+.flex-container-nav a{
+
+    color: black;
+    text-align: center;
+}
+
+ 
+
+.flex-container-nav.hide-mobile{
+
+    display: none;
+    justify-content: center;
+    
+
+}
+
+
+.hide{
+
+    display: block;
+
+}
+
+#logo-button img {
+    height: 40px; 
+    width: auto;
+    vertical-align: middle; 
+}  */
+
+
+
+
+
+
+
+
+
+
+/* רספונסיביות לדף בית */
+
+@media only screen and (min-width: 600px) {
+
+    :root{
+        font-size: 24px;
+    }
+    p {
+        font-size: 1.5rem;
+        text-align: right;
+    }
+
+    .flex-container-nav{
+
+        flex-direction: row;
+        position: relative;
+    }
+
+
+    .flex-container-nav.hide-mobile{
+
+        display: flex;
+        gap: 10%;
+        padding: 2%;
+    padding-bottom: 1%;
+    /* background-color: #008291; */
+    box-shadow: 0 1px 32px rgba(163, 224, 255, 0.5); 
+
+    }
+
+ 
+
+    .hide{
+
+        display: none;
+
+    }
+
+    .flex-container-nav li {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Horizontally center the content */
+        
+    }
+    
+
+}
+
+
+
+
+
+a{
+    font-family: 'Varela Round', sans-serif;
+    text-decoration: none;
+}
+
+
+p{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.75rem; /* Set base font size using relative units */
+    line-height: 1.6; /* Adjust line height */
+    margin-top: 5%; /* Adjust top margin */
+  
+}
+
+
+
+h1{
+    font-family: 'Varela Round', sans-serif; /* Apply custom font */
+    font-size: 2.5rem; /* Set initial font size */
+    color: rgb(55, 199, 233);
+    margin-top: 2%; /* Adjust top margin */
+    line-height: 1.6; /* Adjust line height */
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .p{
+
+    font-size:1.2rem;
+     }   
+  
+.h1{
+    text-align: center;
+}
+
+
+
+}
+
+
+
+
+
+
+/* סירטון פתיחה בעמוד בית*/
+
+
+.flex-container-opening {
+    padding-top: 6%;
+    padding-bottom: 5%;
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adjust gap as needed */
+    flex-direction: row;
+    padding-left: 0;
+    background-color: #EFFBFF;
+   
+}
+
+.flex-container-opening li {
+    width: 37rem;
+    height: 18rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; /* Ensure spacing between rows */
+}
+
+@media (max-width: 600px) {
+    .flex-container-opening {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align items horizontally */
+        justify-content: center; /* Center align items vertically */
+        padding: 1rem;
+    }
+
+    .flex-container-opening li {
+        width: 100%;
+        height: auto; /* Adjust height for responsive design */
+        margin-bottom: 1rem; /* Ensure spacing between rows */
+        text-align: center; /* Center text on smaller screens */
+        margin-left: 0; /* Reset margin-left */
+    }
+}
+
+
+
+
+
+
+
+
+
+   /* הסירטון היכרות אירדוק */
+   .responsive-iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+/* קרוסלה של הדמויות*/
+
+
+.list {
+    display: flex;
+    gap: 48px;
+    padding: 62px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-image: url("/images/Catbg.png"); /* Ensure the path is correct */
+    background-size: cover; /* Make sure the background image covers the entire area */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    position: relative; /* Add position relative to allow absolute positioning of buttons */
+}
+  
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .item {
+    flex-shrink: 0;
+    height: 60vh;
+    width: 28%;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: scale(1.05); /* Slightly scale up the item */
+
+}
+
+
+
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+
+
+
+  .list-wrapper {
+    position: relative;
+  }
+  
+  .button {
+    border: none;
+    background: none;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 4%;
+    width: 3rem;
+    height: 3rem;
+
+  }
+  
+  .button--previous {
+    left: 68.5rem;
+    /* transform: rotate(180deg); */
+  }
+  
+  .button--next {
+    right: 1.5rem;
+  }
+
+
+/* המסך פחות מ-600 */
+@media only screen and (max-width: 600px) {
+    .item {
+        height: 38vh;
+        width: 36vh;
+    }
+
+    .content {
+      font-size: 32px;
+    }
+
+    .button {
+      width: 2rem;
+      height: 2rem;
+    }
+    
+}
+
+.Icon-image-Kid{
+    transform: translate(51%, 0) scale(0.7);
+    max-width: 100%;
+    height: auto;
+    margin-top: 6%;
+    
+}
+.IconTextKid{
+    cursor: pointer;
+    font-size: 3.75rem;
+    color: azure;
+    background: linear-gradient(180deg, #E8D2FD, #C08BF8,#9455D9, #751DD5 );    border-radius: 15%;
+    border-radius: 15%;
+    margin-right: 36%;
+    padding: 14%;
+    padding-left: 21%;
+}
+
+.IconTextDoc{
+    cursor: pointer;
+    font-size: 3.75rem;
+    color: azure;
+    background: linear-gradient(180deg, #ADE7FF, #64D8FF,#35C0E8, #2980A7 );    border-radius: 15%;
+    margin-right: 76%;
+    padding: 12%;
+    padding-top: 19%;
+}
+
+
+.Icon-image-Doc {
+  
+    transform: translate(48%, 0) scale(0.5);
+    max-width: 100%;
+    height: auto;
+    margin-top: 7%;
+}
+
+.IconTextFly{
+    cursor: pointer;
+    font-size: 3.75rem;
+    color: azure;
+    background: linear-gradient(180deg, #FFCEA3, #F07B14,#BE6210, #914F15 );    border-radius: 15%;
+    border-radius: 15%;
+    margin-right: 72%;
+    padding: 12%;
+    padding-top: 19%;
+    padding-left: 20%;
+}
+
+
+.Icon-image-Fly {
+  
+    transform: translate(48%, 0) scale(0.6);
+    max-width: 100%;
+    height: auto;
+    margin-top: 7%;
+}
+
+
+.IconTextSw{
+    cursor: pointer;
+    font-size: 3.75rem;
+    color: azure;
+    background: linear-gradient(180deg, #84F0FF, #4EBDCB,#268A95, #008291);    border-radius: 15%;
+    border-radius: 15%;
+    margin-right: 28%;
+    padding: 12%;
+    padding-top: 19%;
+    padding-left: 20%;
+}
+
+
+.Icon-image-Sw {
+  
+    transform: translate(48%, 0) scale(1.2);
+    max-width: 100%;
+    height: auto;
+    margin-top: 7%;
+}
+
+
+.IconTextAd{
+    cursor: pointer;
+    font-size: 3.75rem;
+    color: azure;
+    background: linear-gradient(180deg, #E0DCDC, #827A7A,#534949);    
+    border-radius: 15%;
+    margin-right: 35%;
+    padding: 12%;
+    padding-top: 19%;
+}
+
+
+.Icon-image-Ad {
+  
+    transform: translate(52%, 0) scale(1.1);    
+    max-width: 100%;
+    height: auto;
+    margin-top: 7%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .IconTextDoc {
+        font-size: 3.3rem;
+        margin-right: 75%;
+        padding: 14%;
+    }
+
+    .Icon-image-Doc {
+        transform: translate(50%, 0) scale(0.5);
+        margin-top: 5%; /* Adjust margin-top for mobile */
+    }
+
+    .IconTextKid {
+        font-size: 3.3rem;
+    margin-right: 59%;
+    padding: 14%;
+    }
+
+    .Icon-image-Kid {
+        transform: translate(50%, 0) scale(0.4);
+
+        margin-top: 5%; /* Adjust margin-top for mobile */
+    }
+
+    .IconTextFly {
+    font-size: 3.3rem;
+    margin-right: 65%;
+    padding: 14%;
+    }
+
+    .Icon-image-Fly {
+        transform: translate(50%, 0) scale(0.5);
+
+        margin-top: 5%; /* Adjust margin-top for mobile */
+    }
+
+
+    .IconTextSw {
+    font-size: 3.3rem;
+    margin-right: 59%;
+    padding: 14%;
+    }
+
+    .Icon-image-Sw {
+        transform: translate(43%, 0) scale(0.7);
+        margin-top: 13%;
+    }
+
+
+
+    .IconTextAd {
+        font-size: 3.3rem;
+        margin-right: 59%;
+        padding: 14%;
+        }
+    
+        .Icon-image-Ad {
+            transform: translate(48%, 0) scale(0.7);
+            margin-top: 13%;
+        }
+    
+.button--previous {
+    left: 17.5rem;
+}
+
+
+}
+
+
+
+
+/* פוטר */
+footer {
+    background-color: rgb(55, 199, 233); /* Blue background color */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Add padding to top and bottom */
+    font-family: 'Varela Round', sans-serif; /* Apply custom font */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+/* Responsive styles for footer */
+@media only screen and (min-width: 600px) {
+    footer {
+        font-size: 1.2rem; /* Adjust font size for larger screens */
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    footer {
+        font-size: 1.4rem; /* Further adjust font size for very large screens */
+    }
+}
+
+
+
+
+
+
+/* דפי פרסונות */
+.open-content {
+   text-align: right;
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: center;
+}
+
+
+.chosenCat-image{
+
+    top: -39%; /* Position the image above the container */
+    left:12%; /* Align the left edge of the image with the center of the container */
+    max-width: 60%; /* Limit the maximum width of the image to fit within the container */
+    height: auto; /* Maintain aspect ratio */
+ 
+
+}
+
+
+
+.chosen-cat-h1{
+    margin-right: 2%;
+    text-align: right;
+}
+
+.chosen-cat-h2{
+    font-family: 'Varela Round';
+    font-size: 1.8em;
+    text-align: right;
+    margin-bottom: 17%;
+    margin-right: 2%;
+}
+
+
+
+
+
+
+/* רספונסיביות של אלמנטים בתוך הפרסונות */
+
+
+@media only screen and (min-width: 600px) {
+    .open-content {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .chosenCat-image {
+        max-width: 80%; /* Reduce image width for smaller screens */
+    }
+
+    .open-content h1 {
+        font-size: 2em;  /* Decrease font size of h1 on smaller screens */
+    }
+
+    .open-content h2 {
+        font-size: 1.5em; /* Decrease font size of h2 on smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* spline */
+
+
+.viewer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+spline-viewer {
+    width: 80%; /* Adjust as necessary */
+    height: 80%; /* Adjust as necessary */
+}
+
+/*  */

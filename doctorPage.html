@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>EardocLearn-Doctors</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/javascript.js"></script>
+
+<!-- Include the @splinetool/runtime library -->
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.8/build/spline-viewer.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+    
+    <div id="container">
+        <nav>
+            <button id="nav-button" class="btn-mobile hide" onclick="toggleNav()"><img src="images/nav-icon.svg"
+                alt="ניווט"></button>
+            <ul id="main-nav" class="flex-container-nav hide-mobile">
+                <!-- <button id="close-nav-button" class="btn-mobile" onclick="toggleNav()"><img src="images/nav-close.svg"
+                        alt="סגירה"></button> -->
+                <li><a href="#">דף הבית </a></li>
+                <li><a href="#">מידע נוסף</a></li>
+                <li ><a href="#">רופאים</a></li>
+                <li><a href="#"> ילדים</a></li>
+                <li><a href="#"> שחיינים</a></li>
+                <li><a href="#"> מבוגרים</a></li>
+                <li><a href="#"> טסים</a></li>
+            </ul>
+        </nav>
+
+
+
+
+        <main>
+   
+
+
+        <h1 class="chosen-cat-h1">אני רופא.ה</h1>  
+            <div class="open-content">
+          
+           
+               <br>
+
+               <h2 class="chosen-cat-h2">הגעת לאתר הדרכה של האירדוק, מכשיר שעוזר בהקלה על כאבים באוזניים. 
+                <br>
+                אנחנו יודעים שחשוב לכם.ן להיות מעודכנים בידע ובטכנולוגיות החדשות ביותר בתחום. 
+                <br>
+                ואנחנו כאן כדי לסייע ולספק מידע מקיף ומקצועי עבור מכשיר האירדוק!</h2>
+            
+                <img src="images/doctorCat.png" alt="רופא.ה" class="chosenCat-image">
+
+            </div>
+
+
+
+<br>
+<h1>למה דווקא אירדוק</h1>
+
+<p>אילו טיפולים חלופיים קיימים בשוק?</p>
+
+
+<div class="container">
+   
+
+
+  <div class="container">
+    <div class="row row-cols-auto">
+      <div class="col">אנטיביוטיקה</div>
+      <div class="col"> טיפות אוזניים</div>
+      <div class="col"> EarPopper</div>
+  
+    </div>
+  </div>
+
+
+
+<br>
+
+            
+
+            <div class="viewer-container">
+                <spline-viewer hint loading-anim-type="spinner-small-dark" url="https://prod.spline.design/slrccaZijrkTmJbH/scene.splinecode"></spline-viewer>
+            </div> 
+
+
+
+
+            
+        </main>
+
+
+        <footer>
+            <p>&copy; 2024. קרדיטים וכאלה.</p>
+        </footer>
+    
+
+    </div>
+</body>
+
+</html>
